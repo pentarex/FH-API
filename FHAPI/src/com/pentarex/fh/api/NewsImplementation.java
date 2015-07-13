@@ -37,7 +37,7 @@ public class NewsImplementation {
 						Elements article = page.select("#text_page p");
 						fnb.setArticle(article.text());
 						Element imageUrl = page.select("#col_right .cont a img").first();
-						if(imageUrl != null) fnb.setImageUrl("www.fh-joanneum.at" + imageUrl.absUrl("src"));
+						if(imageUrl != null) fnb.setImageUrl(imageUrl.absUrl("src"));
 					}
 				return fnb;
 			}

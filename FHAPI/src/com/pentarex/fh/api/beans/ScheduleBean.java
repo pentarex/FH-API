@@ -15,8 +15,8 @@ public class ScheduleBean {
    private String lecturer;
    private String location;
    private String type;
-   private double start;
-   private double end;
+   private String start;
+   private String end;
    private int year;
 
     public String getCourse() {
@@ -59,19 +59,19 @@ public class ScheduleBean {
         this.type = type;
     }
 
-    public double getStart() {
+    public String getStart() {
         return start;
     }
 
-    public void setStart(double start) {
+    public void setStart(String start) {
         this.start = start;
     }
 
-    public double getEnd() {
+    public String getEnd() {
         return end;
     }
 
-    public void setEnd(double end) {
+    public void setEnd(String end) {
         this.end = end;
     }
 
